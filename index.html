@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PERSONAL JOURNEY</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set a light background */
+        }
+
+        header {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: darkblue;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        video {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 100%; /* Make video responsive */
+            max-width: 400px; /* Limit max width of video */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Personal Journey</h1>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome!</h2>
+            <p>Thank you for visiting! I invite you to dive deep into my life, explore my experiences, and discover my passions and aspirations. Your journey through my story begins here!</p>
+            <p>💕💕🥰🥰🥰💐🌸🪷</p>
+            <div class="button-container">
+                <a href="info.html" class="button">Go to Info Page</a>
+            </div>
+            <div class="video-container">
+                <h2>Watch My Journey</h2>
+                <video id="myVideo" controls autoplay muted loop>
+                    <source src="image/myself.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [EUNICE OKUMU] 2023</p>
+    </footer>
+
+    <script>
+        const video = document.getElementById('myVideo');
+
+        video.addEventListener('loadeddata', () => {
+            video.currentTime = 0; 
+        });
+
+        video.addEventListener('timeupdate', () => {
+            if (video.currentTime >= 30) { 
+                video.pause();
+            }
+        });
+    </script>
+</body>
+</html>
