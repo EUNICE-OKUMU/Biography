@@ -1,2 +1,2 @@
-# biography
-personal
+# -personal-journey
+life
